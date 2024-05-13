@@ -20,7 +20,7 @@ def main():
     st.write("This is a basic app to predict whether a company will go bankrupt based on its financial features.")
 
     # Load the trained model
-    model_path = r"C:\Users\yapyf\Documents\Capstone\17_May\bankruptcy_prediction_model.pkl"  # Path to your trained model file
+    model_path = r"C:\Users\yapyf\Documents\Capstone\17_May\bankruptcy_prediction_model1.pkl"  # Path to your trained model file
     model = load_model(model_path)
 
     # Add user input for feature values
