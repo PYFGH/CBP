@@ -9,11 +9,6 @@ def load_model(model_path):
     model = joblib.load(model_path)
     return model
 
-# Load the trained model
-model_path = 'bankruptcy_prediction_model1.pkl'  # Path to your trained model file
-model = load_model(model_path)
-
-
 # Function to make predictions
 def predict_bankruptcy(model, input_data):
     prediction = model.predict(input_data)
@@ -21,6 +16,10 @@ def predict_bankruptcy(model, input_data):
 
 # Main function to run the Streamlit app
 def main():
+    
+    # Load the trained model
+    model = load_model('bankruptcy_prediction_model1.pkl')
+    
     # Set page title and description
     st.title("Company Bankruptcy Prediction")
     st.write("This is a basic app to predict whether a company will go bankrupt based on its financial features.")
