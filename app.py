@@ -18,7 +18,7 @@ def predict_bankruptcy(model, input_data):
 def main():
     
     # Load the trained model
-    model = load_model('bankruptcy_prediction_model1.pkl')
+    model = load_model(r'C:\Users\yapyf\Documents\Capstone\17_May\bankruptcy_prediction_model1.pkl')
     
     # Set page title and description
     st.title("Company Bankruptcy Prediction")
