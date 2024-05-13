@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+# Load the trained model
+model_path = 'bankruptcy_prediction_model1.pkl'  # Path to your trained model file
+model = load_model(model_path)
+
 # Function to load the trained model
 @st.cache  # This decorator ensures that the function is only run once
 def load_model(model_path):
@@ -18,10 +22,6 @@ def main():
     # Set page title and description
     st.title("Company Bankruptcy Prediction")
     st.write("This is a basic app to predict whether a company will go bankrupt based on its financial features.")
-
-    # Load the trained model
-    model_path = 'bankruptcy_prediction_model1.pkl'  # Path to your trained model file
-    model = load_model(model_path)
 
     # Add user input for feature values
     st.sidebar.header("Input Features")
