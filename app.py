@@ -18,7 +18,7 @@ def predict_bankruptcy(model, input_data):
 def main():
     
     # Load the trained model
-    model = load_model(r'C:\Users\yapyf\Documents\Capstone\17_May\bankruptcy_prediction_model1.pkl')
+    model = load_model(r'C:\Users\yapyf\Documents\Capstone\17_May\bankruptcy_prediction_model2.pkl')
     
     # Set page title and description
     st.title("Company Bankruptcy Prediction")
@@ -36,7 +36,7 @@ def main():
     # Create a DataFrame with the input data
     input_data = pd.DataFrame({
         'Feature 1': ['10'],
-        'Feature 2': ['20'],
+        'Feature 2': ['10'],
         'Feature 3': ['10'],
         'Feature 4': ['10'],
         'Feature 5': ['10'],
