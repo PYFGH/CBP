@@ -25,20 +25,20 @@ def main():
 
     # Add user input for feature values
     st.sidebar.header("Input Features")
-    feature1 = st.sidebar.number_input("Feature 1:", value=0.0)
-    feature2 = st.sidebar.number_input("Feature 2:", value=0.0)
-    feature3 = st.sidebar.number_input("Feature 3:", value=0.0)
-    feature4 = st.sidebar.number_input("Feature 4:", value=0.0)
-    feature5 = st.sidebar.number_input("Feature 5:", value=0.0)
+    feature1 = st.sidebar.number_input("Total income/ total expense:", value=0.0)
+    feature2 = st.sidebar.number_input("Debt to equity ratio:", value=0.0)
+    feature3 = st.sidebar.number_input("Interest Coverage ratio:", value=0.0)
+    feature4 = st.sidebar.number_input("Borrowring dependency:", value=0.0)
+    feature5 = st.sidebar.number_input("Current ratio:", value=0.0)
     # Selected top 5 features to predict based on the feature importances
 
     # Create a DataFrame with the input data
     input_data = pd.DataFrame({
-        'Feature 1': ['Total income/ total expense'],
-        'Feature 2': ['Debt to equity ratio'],
-        'Feature 3': ['Interest Coverage ratio'],
-        'Feature 4': ['Borrowring dependency'],
-        'Feature 5': ['Current ratio'],
+        'Feature 1': ['10'],
+        'Feature 2': ['20'],
+        'Feature 3': ['10'],
+        'Feature 4': ['10'],
+        'Feature 5': ['10'],
             })
 
     # Make predictions
