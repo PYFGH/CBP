@@ -2,15 +2,17 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the trained model
-model_path = 'bankruptcy_prediction_model1.pkl'  # Path to your trained model file
-model = load_model(model_path)
 
 # Function to load the trained model
 @st.cache  # This decorator ensures that the function is only run once
 def load_model(model_path):
     model = joblib.load(model_path)
     return model
+
+# Load the trained model
+model_path = 'bankruptcy_prediction_model1.pkl'  # Path to your trained model file
+model = load_model(model_path)
+
 
 # Function to make predictions
 def predict_bankruptcy(model, input_data):
